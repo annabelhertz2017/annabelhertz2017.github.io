@@ -114,3 +114,19 @@ nav a[aria-current="page"]{color:var(--fg)}
 #sequel .book{grid-template-columns:200px 1fr;align-items:center}
 #sequel .cover{box-shadow:0 6px 18px rgba(0,0,0,.12)}
 .teaser-title{font-size:2.2rem;border:0;padding:0;margin:0 0 .3em}
+
+/* Art page */
+.art-intro{padding-bottom:1rem}
+.art-intro h1{font-size:2.2rem;margin-top:0}
+.gallery{columns:2 320px;column-gap:1.6rem}
+.piece{margin:0 0 1.6rem;break-inside:avoid}
+.piece img{display:block;width:100%;height:auto;box-shadow:0 4px 14px rgba(0,0,0,.12)}
+.piece-ph{aspect-ratio:4/5}
+.piece:nth-child(3n+2) .piece-ph{aspect-ratio:1/1}
+.piece:nth-child(3n) .piece-ph{aspect-ratio:3/4}
+.piece figcaption{padding-top:.6rem;font-size:1rem;line-height:1.4}
+#lightbox{border:0;padding:1rem;background:var(--bg);color:var(--fg);max-width:min(92vw,900px);max-height:92vh;overflow:auto}
+#lightbox::backdrop{background:rgba(0,0,0,.75)}
+#lightbox img{display:block;max-width:100%;max-height:78vh;margin:0 auto}
+.lb-cap{margin:.8rem 0 0;text-align:center;color:var(--muted)}
+.lb-close{position:absolute;top:.3rem;right:.6rem;background:none;border:0;color:var(--fg);font-size:2rem;line-height:1;cursor:pointer}
