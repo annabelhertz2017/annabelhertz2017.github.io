@@ -16,10 +16,10 @@
 <header class="site-header">
   <a class="wordmark" href="#top">a n n a b e l &nbsp; l i l l e &nbsp; h e r t z</a>
   <nav>
-    <a href="#about">About</a>
+    <a href="about.html">About</a>
     <a href="#books">Books</a>
-    <a href="#writing">Writing</a>
-    <a href="#blog">Blog</a>
+    <a href="writing.html">Writing</a>
+    <a href="blog.html">Blog</a>
     <a href="#events">Events</a>
     <a href="#contact">Contact</a>
   </nav>
@@ -34,21 +34,22 @@
     <p class="lede">Author of <em>Seeing Green</em>. The sequel is on its way.</p>
     <p class="actions">
       <a class="btn" href="#books">Get the book</a>
-      <a class="btn ghost" href="#blog">Read the blog</a>
+      <a class="btn ghost" href="blog.html">Read the blog</a>
     </p>
   </section>
 
-  <!-- ABOUT -->
-  <section id="about" class="split">
-    <figure class="portrait">
-      <img src="images/annabel-portrait.jpg" alt="Portrait of Annabel Lille Hertz" width="200" height="221">
-    </figure>
-    <div>
-      <h2>About</h2>
-      <p>Annabel Lille Hertz is the author of <em>Seeing Green</em>, the story of a young activist's jaunt into the world of environmentalism. Drawing on her background with NGOs, her writing engages readers in international politics and non-profiteering, and shows the many sides of the people who work in that world.</p>
-      <p>She studied international relations and public policy at Harvard's Kennedy School, American University, SF State, UC Santa Cruz, the University of Sussex and the UN/Ralph Bunche Institute. Her adopted home is DC, though she has also lived in New York, Paris, Berlin, Geneva and Kingston, Jamaica.</p>
-      <p>Like Arcani, the protagonist of <em>Seeing Green</em>, she grew up in San Francisco and lives on espresso and avocados.</p>
-    </div>
+  <!-- SEQUEL TEASER -->
+  <section id="sequel">
+    <article class="book coming">
+        <img class="cover" src="images/sequel-teaser-cover.jpg" alt="Teaser cover: The Great Reveal, the sequel to Seeing Green by Annabel Hertz" width="800" height="1200">
+        <div class="book-info">
+          <p class="eyebrow">Coming soon</p>
+          <h2 class="teaser-title">Arcani is back.</h2>
+          <p class="meta"><span>The sequel to <em>Seeing Green</em></span></p>
+          <p>The characters live on, and the story's themes of reconciliation and idealism reach a wider scope. [Add the title and one line about what's at stake.]</p>
+          <div class="buy"><a class="btn" href="#contact">Get launch news</a></div>
+        </div>
+      </article>
   </section>
 
   <!-- BOOKS (e-commerce ready: each .book has a data-sku and a .buy slot) -->
@@ -94,7 +95,7 @@
         <div class="box why">
           <h4>Why I wrote it</h4>
           <p>[Two or three sentences in your own voice: what pulled you to this story, the world of NGOs and politics you knew, and who you wanted Arcani to be.]</p>
-          <a class="text-link" href="#blog">Read the full story &rarr;</a>
+          <a class="text-link" href="blog.html">Read the full story &rarr;</a>
         </div>
       </div>
 
@@ -116,62 +117,7 @@
       </section>
       </div>
 
-      <article class="book coming">
-        <div class="cover placeholder" role="img" aria-label="Sequel cover placeholder">Coming soon</div>
-        <div class="book-info">
-          <h3>The Sequel to <em>Seeing Green</em></h3>
-          <p class="meta"><span>Novel</span> &middot; <span>In progress</span></p>
-          <p>The characters live on, with the themes of reconciliation reaching a wider scope. [Add a teaser line.]</p>
-          <div class="buy"><a class="btn ghost" href="#contact">Get launch news</a></div>
-        </div>
-      </article>
 
-    </div>
-  </section>
-
-  <!-- WRITING (mirrors the clean image + italic title + outlet + date list) -->
-  <section id="writing">
-    <h2>Writing</h2>
-    <ul class="writing-list">
-      <li>
-        <div class="thumb placeholder">Image</div>
-        <div>
-          <p class="title"><em>Article title goes here</em></p>
-          <p class="meta">Publication name<br>Month DD, YYYY</p>
-          <a class="text-link" href="#">Read more.</a>
-        </div>
-      </li>
-      <li>
-        <div class="thumb placeholder">Image</div>
-        <div>
-          <p class="title"><em>Another piece, essay or op-ed</em></p>
-          <p class="meta">Publication name<br>Month DD, YYYY</p>
-          <a class="text-link" href="#">Read more.</a>
-        </div>
-      </li>
-    </ul>
-  </section>
-
-  <!-- BLOG + SUPPORT -->
-  <section id="blog">
-    <h2>Blog</h2>
-    <div class="posts">
-      <article class="post">
-        <p class="meta">Month DD, YYYY</p>
-        <h3><a href="#">First post title</a></h3>
-        <p>A short teaser for the post. Later we can move to individual post pages or a markdown-based generator (Jekyll is built into GitHub Pages).</p>
-      </article>
-      <article class="post">
-        <p class="meta">Month DD, YYYY</p>
-        <h3><a href="#">Second post title</a></h3>
-        <p>Another teaser line to show how the list will look.</p>
-      </article>
-    </div>
-    <div class="support">
-      <h3>Support the work</h3>
-      <p>If you enjoy the writing, you can help keep it going.</p>
-      <!-- Swap href for Ko-fi / Buy Me a Coffee / Patreon / Substack -->
-      <a class="btn" href="#">Buy me a coffee</a>
     </div>
   </section>
 
@@ -211,6 +157,28 @@
       <input id="email" type="email" placeholder="Email for news &amp; launches" required>
       <button class="btn" type="submit">Subscribe</button>
     </form>
+  </section>
+
+  <!-- ABOUT (short version; full bio lives on about.html) -->
+  <section id="about" class="split about-teaser">
+    <figure class="portrait">
+      <img src="images/annabel-portrait.jpg" alt="Portrait of Annabel Lille Hertz" width="200" height="221">
+    </figure>
+    <div>
+      <h2>About</h2>
+      <p>Annabel Lille Hertz is the author of <em>Seeing Green</em>, the story of a young activist's jaunt into the world of environmentalism. Drawing on her background with NGOs, her writing engages readers in international politics and shows the many sides of the people who work in that world.</p>
+      <p><a class="text-link" href="about.html">More about Annabel &rarr;</a></p>
+    </div>
+  </section>
+
+  <!-- SUPPORT -->
+  <section id="support">
+    <div class="support">
+      <h3>Support the work</h3>
+      <p>If you enjoy the writing, you can help keep it going.</p>
+      <!-- Swap href for Ko-fi / Buy Me a Coffee / Patreon / Substack -->
+      <a class="btn" href="#">Buy me a coffee</a>
+    </div>
   </section>
 
 </main>

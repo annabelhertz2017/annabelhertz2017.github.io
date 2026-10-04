@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Blog — Annabel Lille Hertz</title>
+<meta name="description" content="The blog of Annabel Lille Hertz.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <a class="wordmark" href="index.html">a n n a b e l &nbsp; l i l l e &nbsp; h e r t z</a>
+  <nav>
+    <a href="about.html">About</a>
+    <a href="index.html#books">Books</a>
+    <a href="writing.html">Writing</a>
+    <a href="blog.html" aria-current="page">Blog</a>
+    <a href="index.html#events">Events</a>
+    <a href="index.html#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+
+  <section id="blog">
+    <h2>Blog</h2>
+    <div class="posts">
+      <article class="post">
+        <p class="meta">Month DD, YYYY</p>
+        <h3><a href="#">First post title</a></h3>
+        <p>A short teaser for the post. Later we can move to individual post pages or a markdown-based generator (Jekyll is built into GitHub Pages).</p>
+      </article>
+      <article class="post">
+        <p class="meta">Month DD, YYYY</p>
+        <h3><a href="#">Second post title</a></h3>
+        <p>Another teaser line to show how the list will look.</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="support">
+    <div class="support">
+      <h3>Support the work</h3>
+      <p>If you enjoy the writing, you can help keep it going.</p>
+      <!-- Swap href for Ko-fi / Buy Me a Coffee / Patreon / Substack -->
+      <a class="btn" href="#">Buy me a coffee</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <p>&copy; <span id="yr">2026</span> Annabel Lille Hertz</p>
+  <p>
+    <a href="https://www.goodreads.com/author/show/6469408.Annabel_Lille_Hertz">Goodreads</a> &middot;
+    <a href="https://www.facebook.com/pages/Annabel-Hertz-Author/480798182020608">Facebook</a>
+  </p>
+</footer>
+
+<script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
+</body>
+</html>

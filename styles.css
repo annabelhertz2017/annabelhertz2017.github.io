@@ -98,3 +98,19 @@ section{padding:4rem 0 1rem}
 .dot.on{background:var(--fg);border-color:var(--fg)}
 @media (max-width:640px){.book-extras{grid-template-columns:1fr}}
 @media (prefers-reduced-motion:reduce){.slide{transition:none}}
+
+/* About page + home teaser */
+.about-page{padding-top:4rem}
+.about-page h1{font-size:2.2rem;margin-top:0}
+.about-teaser{padding-bottom:3rem}
+nav a[aria-current="page"]{color:var(--fg)}
+
+/* Support box */
+#support{padding-top:2rem}
+.posts+#support{padding-top:0}
+
+/* Sequel teaser under the hero */
+#sequel{padding-top:1rem}
+#sequel .book{grid-template-columns:200px 1fr;align-items:center}
+#sequel .cover{box-shadow:0 6px 18px rgba(0,0,0,.12)}
+.teaser-title{font-size:2.2rem;border:0;padding:0;margin:0 0 .3em}
