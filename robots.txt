@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /coaching.html
+
+Sitemap: https://www.annabelhertz.com/sitemap.xml
