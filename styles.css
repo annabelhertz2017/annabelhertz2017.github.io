@@ -460,9 +460,12 @@ h2,.art-cat>h2{border-bottom-color:var(--taupe)}
 .hero-ink .ink-bleed{fill:#6a3fc0;opacity:.35}
 .hero-ink .ink-sheen{fill:#a98be8;opacity:.4}
 @media (prefers-color-scheme:dark){.hero-ink .ink-body{fill:#d9cbfa}.hero-ink .ink-sheen{fill:#fff}.hero-ink .ink-bleed{fill:#c9b6f2}}
-/* Pen: hidden on phones; on tablet-width windows it is drawn smaller and the tagline is kept clear of it */
+/* Pen: drawn smaller on phones and tablet-width windows; on tablets the tagline is kept clear of it */
 @media (max-width:760px){
-  .hero-ink .ink-pen{display:none}
+  .hero-ink .ink-pen{transform-box:fill-box;transform-origin:.2% 95.5%;transform:scale(.72)}
+}
+@media (min-width:481px) and (max-width:760px){
+  .hero .lede{max-width:80%}
 }
 @media (min-width:761px) and (max-width:960px){
   .hero-ink .ink-pen{transform-box:fill-box;transform-origin:.2% 95.5%;transform:scale(.72)}
