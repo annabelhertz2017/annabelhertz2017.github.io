@@ -763,3 +763,11 @@ body .closing-row::after{content:"";position:absolute;top:44px;bottom:44px;left:
   body .closing-row::before,body .closing-row::after{display:none}
   body .closing-row .signup-embed{margin-left:0}
 }
+
+/* Home: book pages a little taller so the whole form fits */
+body .closing-row .site-disclaimer-banner,body .closing-row .signup-embed{height:490px}
+body .closing-row .signup-embed iframe{height:570px}
+@media (max-width:940px){
+  body .closing-row .site-disclaimer-banner,body .closing-row .signup-embed{height:auto}
+  body .closing-row .signup-embed iframe{height:620px}
+}
