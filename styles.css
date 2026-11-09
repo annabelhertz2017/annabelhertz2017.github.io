@@ -771,3 +771,9 @@ body .closing-row .signup-embed iframe{height:570px}
   body .closing-row .site-disclaimer-banner,body .closing-row .signup-embed{height:auto}
   body .closing-row .signup-embed iframe{height:620px}
 }
+
+/* Home: Keeping it Real text with narrower side margins, lifted a little */
+@media (min-width:941px){
+  body .closing-row .site-disclaimer-banner{padding:2rem 1.5rem 4.2rem}
+  body .closing-row .site-disclaimer-banner .site-disclaimer{max-width:none;width:100%}
+}
