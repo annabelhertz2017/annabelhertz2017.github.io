@@ -752,3 +752,14 @@ body .closing-row .signup-embed iframe{width:500px;height:510px;transform:scale(
   body .closing-row .signup-embed{width:100%;max-width:430px;height:auto;padding:22px 14px}
   body .closing-row .signup-embed iframe{width:100%;height:620px;transform:none}
 }
+
+/* Home: the two boxes sit together like an open book, with a soft spine */
+body .closing-row{position:relative;gap:0;width:860px;max-width:100%;margin-left:auto;margin-right:auto}
+body .closing-row .signup-embed{margin-left:-1px}
+body .closing-row::before{content:"";position:absolute;top:0;bottom:0;left:50%;width:70px;transform:translateX(-50%);pointer-events:none;z-index:2;background:linear-gradient(to right,transparent,rgba(60,50,30,.05) 38%,rgba(60,50,30,.12) 50%,rgba(60,50,30,.05) 62%,transparent)}
+body .closing-row::after{content:"";position:absolute;top:44px;bottom:44px;left:50%;width:1px;pointer-events:none;z-index:2;background:linear-gradient(to bottom,transparent,#cfcabb 12%,#cfcabb 88%,transparent)}
+@media (max-width:940px){
+  body .closing-row{width:auto;gap:2rem}
+  body .closing-row::before,body .closing-row::after{display:none}
+  body .closing-row .signup-embed{margin-left:0}
+}
